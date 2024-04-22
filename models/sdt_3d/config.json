@@ -1,0 +1,23 @@
+{
+    "input_shape": [
+        16,
+        268,
+        268
+    ],
+    "shape_increase": [
+        0,
+        600,
+        600
+    ],
+    "outputs": {
+        "sdt": {
+            "out_dtype": "float32",
+            "out_dims": 1
+        }
+    },
+    "output_shape": [
+        4,
+        144,
+        144
+    ]
+}

@@ -1,0 +1,29 @@
+evaluation:
+  labels_dataset: eroded_volumes/labels/s1
+  #labels_dataset: eroded_volumes/labels
+  mask_dataset: post/masks_200000
+  mask_file: ob4_5.zarr
+  raw_file: /scratch/09632/nick_calzada_/MVB_detection/data/ob4_5.zarr #/home/vijay/organelle/data/ob4_5.zarr
+predict:
+  sdt_3d:
+    iteration: 100000
+    num_cache_workers: 1
+    num_workers: 4
+    out_file: ob4_5.zarr
+    out_prefix: pred_100k
+    raw_datasets:
+    - volumes/raw/s1
+    raw_file: /scratch/09632/nick_calzada_/MVB_detection/data/ob4_5.zarr #/home/vijay/organelle/data/ob4_5.zarr
+    roi_offset: null
+    roi_shape: null
+    setup_dir: /scratch/09632/nick_calzada_/MVB_detection/models/sdt_3d
+processing:
+  threshold:
+    num_workers: 40
+    out_dataset: post/masks_100000
+    out_file: ob4_5.zarr
+    pred_dataset: pred_100k/sdt_100000
+    pred_file: ob4_5.zarr
+    roi_offset: null
+    roi_shape: null
+    threshold: 0.0
