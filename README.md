@@ -1,5 +1,5 @@
 # MVB_detection
-Detection of multivesicular bodies in electron microscopy images. 
+Project designed for the detection of multivesicular bodies (MVBs) in electron microscopy images.
 To begin this experiment, download and import the necessary libraries and packages into your desired virtual environment: 
 
 ```bash
